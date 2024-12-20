@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+  
+ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li{
+    cursor: pointer;
+    margin: 5px 0;
+    position: relative;
+}
+
+li::before{
+    content: "+";
+    margin-right: 10px;
+    display: inline-block;
+}
+
+li.open::before{
+    content: "-";
+}
+
+li > ul{
+    display: none;
+    padding-left: 15px;
+}
+
+li.open > ul{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(87, 87, 87);
+}
