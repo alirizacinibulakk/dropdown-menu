@@ -27,6 +27,7 @@ function render(data, menuContainer){
         const link = document.createElement("a");
         link.href = "#";
         link.innerText = item.label;
+        link.target = "blank"
         li.appendChild(link);
     }
 
